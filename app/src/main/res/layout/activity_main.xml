@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/login_background"
-    android:gravity="center"
+    android:gravity="top"
+    android:paddingTop="30dp"
     tools:context=".MainActivity">
 
     <LinearLayout
@@ -15,9 +16,40 @@
         android:orientation="vertical">
 
         <ImageView
-            android:layout_width="160dp"
-            android:layout_height="160dp"
-            android:src="@drawable/icon_account_circle" />
+            android:layout_width="275dp"
+            android:layout_height="235dp"
+            android:src="@drawable/logo" />
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:src="@drawable/Black_colour"
+            android:scaleX="100"
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Welcome to LiftMates:"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:paddingTop="20dp"
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_Login"
+            android:layout_gravity="center"
+            android:layout_marginTop="400dp"
+            android:text="LOG IN"
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_Register"
+            android:layout_gravity="center"
+            android:text="REGISTER"
 
     </LinearLayout>
 

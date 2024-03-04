@@ -1,57 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/login_background"
-    android:gravity="top"
-    android:paddingTop="30dp"
     tools:context=".MainActivity">
 
-    <LinearLayout
-        android:layout_width="match_parent"
+    <TextView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:orientation="vertical">
+        android:text="Hello World!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <ImageView
-            android:layout_width="275dp"
-            android:layout_height="235dp"
-            android:src="@drawable/logo" />
-
-
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="10dp"
-            android:src="@drawable/Black_colour"
-            android:scaleX="100"
-
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Welcome to LiftMates:"
-            android:textColor="@color/black"
-            android:textAlignment="center"
-            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
-            android:paddingTop="20dp"
-        <Button
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            android:id="@+id/button_Login"
-            android:layout_gravity="center"
-            android:layout_marginTop="400dp"
-            android:text="LOG IN"
-
-        <Button
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            android:id="@+id/button_Register"
-            android:layout_gravity="center"
-            android:text="REGISTER"
-
-    </LinearLayout>
-
-
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "938395533122",
+    "project_id": "liftmate-1f95d",
+    "storage_bucket": "liftmate-1f95d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:938395533122:android:0c0a18f230f65fb4a5d2db",
+        "android_client_info": {
+          "package_name": "com.example.LiftMate"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBBdcDQCMYeAaKMP_rdsERsX36RpWc9TG4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:938395533122:android:3326cb6a8dfea4e7a5d2db",
+        "android_client_info": {
+          "package_name": "lift.mate.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBBdcDQCMYeAaKMP_rdsERsX36RpWc9TG4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

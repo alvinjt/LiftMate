@@ -1,4 +1,4 @@
-package com.example.myapplication
+package com.example.LiftMate
 
 import org.junit.Test
 

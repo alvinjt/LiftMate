@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/signup_screen"
+    android:background="@drawable/register_page"
     tools:context=".SignUpActivity">
 
 
@@ -14,10 +14,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="352dp"
+        android:orientation="horizontal"
         app:boxStrokeColor="@color/yellow"
         app:hintTextColor="@color/yellow"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="300dp">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/emailEt"
@@ -36,9 +39,10 @@
         android:layout_marginHorizontal="16dp"
         app:boxStrokeColor="@color/yellow"
         app:hintTextColor="@color/yellow"
-        app:passwordToggleEnabled="true"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="383dp">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailLayout"
+        app:passwordToggleEnabled="true">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/passET"
@@ -57,9 +61,11 @@
         android:layout_marginHorizontal="16dp"
         app:boxStrokeColor="@color/yellow"
         app:hintTextColor="@color/yellow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordLayout"
         app:passwordToggleEnabled="true"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="466dp">
+        tools:ignore="MissingConstraints">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/confirmPassEt"
@@ -75,12 +81,16 @@
         android:layout_width="379dp"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="16dp"
-        android:background="@color/yellow"
+        android:layout_marginTop="88dp"
+        android:background="@color/black"
         android:text="Sign Up"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="696dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/confirmPasswordLayout"
+        app:layout_constraintVertical_bias="0.456" />
 
     <TextView
         android:id="@+id/textView"
@@ -88,6 +98,8 @@
         android:layout_height="wrap_content"
         android:text="Already Registered? Sign In!"
         android:textColor="@color/black"
-        tools:layout_editor_absoluteX="117dp"
-        tools:layout_editor_absoluteY="819dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
 </androidx.constraintlayout.widget.ConstraintLayout>

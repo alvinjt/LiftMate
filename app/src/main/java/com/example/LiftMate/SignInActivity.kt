@@ -4,7 +4,8 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.codingstuff.loginandsignup.databinding.ActivitySignInBinding
+import com.example.LiftMate.databinding.ActivitySignInBinding
+import com.example.LiftMate.SignUpActivity
 import com.google.firebase.auth.FirebaseAuth
 
 class SignInActivity : AppCompatActivity() {
@@ -40,12 +41,11 @@ class SignInActivity : AppCompatActivity() {
                     }
                 }
             } else {
-                Toast.makeText(this, "Empty Fields Are not Allowed !!", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Empty Fields Are not Allowed!", Toast.LENGTH_SHORT).show()
 
             }
         }
     }
-
     override fun onStart() {
         super.onStart()
 
@@ -54,4 +54,5 @@ class SignInActivity : AppCompatActivity() {
             startActivity(intent)
         }
     }
+
 }

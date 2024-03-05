@@ -1,10 +1,11 @@
-package com.example.Liftmate
+package com.example.LiftMate
 
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.codingstuff.loginandsignup.databinding.ActivitySignUpBinding
+import com.example.LiftMate.SignInActivity
+import com.example.LiftMate.databinding.ActivitySignUpBinding
 import com.google.firebase.auth.FirebaseAuth
 
 class SignUpActivity : AppCompatActivity() {

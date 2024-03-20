@@ -38,11 +38,12 @@
                 android:layout_height="match_parent"
                 android:orientation="vertical"
                 android:gravity="center"
-
                 >
+
                 <ImageView
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
+                    android:id="@+id/buttonCalender"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
                     android:src="@drawable/ic_calender"
                     android:layout_gravity="center"
                     />
@@ -53,7 +54,7 @@
                     android:layout_gravity="center"
                     android:textSize="18sp"
                     android:textStyle="bold"
-                    android:textColor="@color/charcoal"
+                    android:textColor="@color/charcoal"/>
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
@@ -66,7 +67,9 @@
             android:layout_row="0"
             android:layout_column="1"
             android:layout_margin="12dp"
-            app:cardElevation="20dp">
+            app:cardElevation="20dp"
+            >
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -75,8 +78,9 @@
 
                 >
                 <ImageView
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
+                    android:id="@+id/buttonWorkouts"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
                     android:src="@drawable/ic_weight"
                     android:layout_gravity="center"
                     />
@@ -87,7 +91,7 @@
                     android:layout_gravity="center"
                     android:textSize="18sp"
                     android:textStyle="bold"
-                    android:textColor="@color/charcoal"
+                    android:textColor="@color/charcoal"/>
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
@@ -119,7 +123,7 @@
                     android:layout_gravity="center"
                     android:textSize="18sp"
                     android:textStyle="bold"
-                    android:textColor="@color/charcoal"
+                    android:textColor="@color/charcoal"/>
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
@@ -151,7 +155,7 @@
                     android:layout_gravity="center"
                     android:textSize="18sp"
                     android:textStyle="bold"
-                    android:textColor="@color/charcoal"
+                    android:textColor="@color/charcoal"/>
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
@@ -183,7 +187,7 @@
                     android:layout_gravity="center"
                     android:textSize="18sp"
                     android:textStyle="bold"
-                    android:textColor="@color/charcoal"
+                    android:textColor="@color/charcoal"/>
             </LinearLayout>
         </androidx.cardview.widget.CardView>
         <androidx.cardview.widget.CardView
@@ -214,7 +218,7 @@
                     android:layout_gravity="center"
                     android:textSize="18sp"
                     android:textStyle="bold"
-                    android:textColor="@color/charcoal"
+                    android:textColor="@color/charcoal"/>
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 

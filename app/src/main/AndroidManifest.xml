@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LoginAndSignUp">
         <activity
+            android:name=".SettingsPageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AccountPageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CalenderPageActivity"
+            android:exported="false" />
+        <activity
             android:name=".WorkoutPageActivity"
             android:exported="false" />
         <activity
@@ -26,7 +35,7 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
     </application>
 
 </manifest>

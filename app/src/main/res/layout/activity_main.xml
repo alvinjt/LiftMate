@@ -8,26 +8,70 @@
 
     <View
         android:id="@+id/top_view"
-      android:layout_width="match_parent"
+        android:layout_width="match_parent"
         android:layout_height="200dp"
         android:background="@drawable/bg_view"
         android:elevation="20dp"
+        android:layout_gravity="bottom"
         />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="LiftMate"
+        android:textColor="@color/charcoal"
+        android:textSize="60sp"
+        android:elevation="25dp"
+        android:textStyle="bold"
+        android:layout_marginTop="50sp"
+
+        />
+
 
         <ProgressBar
             android:id="@+id/progressBar"
-            style="?android:attr/progressBarStyleHorizontal"
+            style="@android:style/Widget.ProgressBar.Horizontal"
             android:layout_width="match_parent"
-            android:layout_height="30dp"
+            android:layout_height="wrap_content"
             android:layout_below="@id/top_view"
-            android:layout_marginTop="10dp"
-            android:layout_marginRight="35dp"
+            android:layout_marginTop="200dp"
+            android:layout_marginRight="70dp"
             android:layout_marginLeft="35dp"
+            android:progressBackgroundTint="@color/charcoal"
+            android:progressTint="@color/green"
             />
 
 
+    <TextView
+        android:id="@+id/percentText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top_view"
+        android:textColor="@color/charcoal"
+        android:textStyle="bold"
+        android:layout_marginLeft="350dp"
+        android:layout_marginTop="200dp"/>
 
+    <TextClock
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/testProgressBtn"
+            android:layout_marginTop="30dp"
+            android:textSize="50sp"
+            tools:targetApi="jelly_bean_mr1"
+            android:textColor="@color/charcoal"
+            android:layout_centerHorizontal="true"/>
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/progressBar"
+            android:text="Workout Progress"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:textSize="18sp"
+            android:textColor="@color/charcoal"
+            />
 
     <GridLayout
         android:layout_width="match_parent"
@@ -188,5 +232,6 @@
         android:layout_marginLeft="380dp"
         android:layout_below="@id/top_view"
         />
+
 
 </RelativeLayout>

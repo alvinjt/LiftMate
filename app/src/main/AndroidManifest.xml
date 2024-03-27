@@ -10,6 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LoginAndSignUp">
         <activity
+            android:name=".TestView"
+            android:exported="false"
+            android:label="@string/title_activity_test_view"
+            android:theme="@style/Theme.LoginAndSignUp.NoActionBar" />
+        <activity
             android:name=".SettingsPageActivity"
             android:exported="false" />
         <activity

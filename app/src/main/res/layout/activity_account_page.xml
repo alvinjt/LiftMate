@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AccountPageActivity">
+
+    <View
+        android:id="@+id/greenBar"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/bg_view"
+        android:elevation="20dp"
+        android:layout_gravity="bottom"
+        />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/ic_account"
+        android:elevation="20dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Account"
+        android:layout_below="@id/imageView2"
+        android:layout_centerHorizontal="true"
+        android:elevation="20dp"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="@color/charcoal"
+
+
+        />
+
+    <TextView
+        android:id="@+id/emailView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email:"
+        android:textSize="20dp"
+        android:layout_below="@id/greenBar"
+        android:layout_marginLeft="65dp"
+        android:textStyle="bold"
+        android:textColor="@color/charcoal"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password:"
+        android:textSize="20dp"
+        android:layout_below="@id/emailView"
+        android:layout_marginLeft="65dp"
+        android:textStyle="bold"
+        android:textColor="@color/charcoal"
+        />
+
+
+</RelativeLayout>

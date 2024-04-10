@@ -108,14 +108,15 @@
                     android:src="@drawable/ic_calender"
                     android:layout_gravity="center"
                     />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Calender"
                     android:layout_gravity="center"
+                    android:text="Calendar"
+                    android:textColor="@color/charcoal"
                     android:textSize="18sp"
-                    android:textStyle="bold"
-                    android:textColor="@color/charcoal"/>
+                    android:textStyle="bold" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 

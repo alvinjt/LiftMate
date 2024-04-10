@@ -8,8 +8,6 @@ import android.widget.Button
 import android.widget.ImageView
 import android.widget.ProgressBar
 import android.widget.TextView
-import androidx.activity.result.contract.ActivityResultContracts
-import androidx.cardview.widget.CardView
 
 class MainActivity : AppCompatActivity() {
     @SuppressLint("SetTextI18n")
@@ -23,14 +21,14 @@ class MainActivity : AppCompatActivity() {
         val progressBar = findViewById<ProgressBar>(R.id.progressBar)
         val progressBtn = findViewById<Button>(R.id.testProgressBtn)
         var percent = 0
-        percentageText.text = percent.toString()+ "%"
+        percentageText.text = "$percent%"
 
         progressBtn.setOnClickListener{
             progressBar.incrementProgressBy(10)
             if (percent < 100) {
                 percent += 10
             }
-            percentageText.text = percent.toString()+ "%"
+            percentageText.text = "$percent%"
         }
 
 
@@ -41,11 +39,11 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-     fun clickListener(){
-        var imageWorkout = findViewById<ImageView>(R.id.buttonWorkouts)
-        var imageSettings = findViewById<ImageView>(R.id.buttonSettings)
-        var imageAccount = findViewById<ImageView>(R.id.buttonAccount)
-        var imageCalender = findViewById<ImageView>(R.id.buttonCalender)
+      fun clickListener(){
+        val imageWorkout = findViewById<ImageView>(R.id.buttonWorkouts)
+        val imageSettings = findViewById<ImageView>(R.id.buttonSettings)
+        val imageAccount = findViewById<ImageView>(R.id.buttonAccount)
+        val imageCalender = findViewById<ImageView>(R.id.buttonCalender)
 
 
         imageWorkout.setOnClickListener{
@@ -66,19 +64,19 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-    public fun openWorkoutPageActivity(){
+      fun openWorkoutPageActivity(){
         startActivity(Intent(this@MainActivity, WorkoutPageActivity::class.java))
     }
 
-    public fun openSettingsPageActivity(){
+     fun openSettingsPageActivity(){
         startActivity(Intent(this@MainActivity, SettingsPageActivity::class.java))
     }
 
-    public fun openAccountPageActivity(){
+      fun openAccountPageActivity(){
         startActivity(Intent(this@MainActivity, AccountPageActivity::class.java))
     }
 
-    public fun openCalenderPageActivity(){
+     fun openCalenderPageActivity(){
         startActivity(Intent(this@MainActivity, CalenderPageActivity::class.java))
     }
 

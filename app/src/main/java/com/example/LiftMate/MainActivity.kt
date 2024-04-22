@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
         var percent = 0
         percentageText.text = "$percent%"
 
-        progressBtn.setOnClickListener{
+        progressBtn.setOnClickListener {
             progressBar.incrementProgressBy(10)
             if (percent < 100) {
                 percent += 10
@@ -35,18 +35,16 @@ class MainActivity : AppCompatActivity() {
         clickListener()
 
 
-
-
     }
 
-      fun clickListener(){
+    fun clickListener() {
         val imageWorkout = findViewById<ImageView>(R.id.buttonWorkouts)
         val imageSettings = findViewById<ImageView>(R.id.buttonSettings)
         val imageAccount = findViewById<ImageView>(R.id.buttonAccount)
         val imageCalender = findViewById<ImageView>(R.id.buttonCalender)
 
 
-        imageWorkout.setOnClickListener{
+        imageWorkout.setOnClickListener {
             openWorkoutPageActivity()
         }
 
@@ -54,29 +52,29 @@ class MainActivity : AppCompatActivity() {
             openSettingsPageActivity()
         }
 
-        imageAccount.setOnClickListener{
+        imageAccount.setOnClickListener {
             openAccountPageActivity()
         }
 
-        imageCalender.setOnClickListener{
+        imageCalender.setOnClickListener {
             openCalenderPageActivity()
         }
 
     }
 
-      fun openWorkoutPageActivity(){
+    fun openWorkoutPageActivity() {
         startActivity(Intent(this@MainActivity, WorkoutPageActivity::class.java))
     }
 
-     fun openSettingsPageActivity(){
+    fun openSettingsPageActivity() {
         startActivity(Intent(this@MainActivity, SettingsPageActivity::class.java))
     }
 
-      fun openAccountPageActivity(){
+    fun openAccountPageActivity() {
         startActivity(Intent(this@MainActivity, AccountPageActivity::class.java))
     }
 
-     fun openCalenderPageActivity(){
+    fun openCalenderPageActivity() {
         startActivity(Intent(this@MainActivity, CalenderPageActivity::class.java))
     }
 

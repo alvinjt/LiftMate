@@ -23,9 +23,7 @@
         android:textSize="60sp"
         android:elevation="25dp"
         android:textStyle="bold"
-        android:layout_marginTop="50sp"
-
-        />
+        android:layout_marginTop="50sp" />
 
 
         <ProgressBar

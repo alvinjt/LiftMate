@@ -6,4 +6,105 @@
     android:layout_height="match_parent"
     tools:context=".WorkoutPageActivity">
 
+    <View
+        android:id="@+id/top_view"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_gravity="bottom"
+        android:background="@drawable/bg_view"
+        android:elevation="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp"
+        android:elevation="25dp"
+        android:text="LIFTS"
+        android:textColor="@color/charcoal"
+        android:textSize="75sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/top_view" />
+
+    <Button
+        android:id="@+id/chest_button"
+        android:layout_width="224dp"
+        android:layout_height="89dp"
+        android:layout_marginTop="20dp"
+        android:onClick="navigateToChestPage"
+        android:text="Chest"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:textColor="@color/charcoal"
+        android:backgroundTint ="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/top_view" />
+
+    <Button
+        android:id="@+id/back_button"
+        android:layout_width="234dp"
+        android:layout_height="83dp"
+        android:layout_marginTop="20dp"
+        android:onClick="navigateToBackPage"
+        android:text="Back"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:textColor="@color/charcoal"
+        android:backgroundTint ="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/legs_button" />
+
+    <Button
+        android:id="@+id/legs_button"
+        android:layout_width="228dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="20dp"
+        android:onClick="navigateToLegsPage"
+        android:text="Legs"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:textColor="@color/charcoal"
+        android:backgroundTint ="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chest_button" />
+
+    <Button
+        android:id="@+id/arms_button"
+        android:layout_width="234dp"
+        android:layout_height="83dp"
+        android:layout_marginTop="20dp"
+        android:onClick="navigateToArmsPage"
+        android:text="Arms"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:textColor="@color/charcoal"
+        android:backgroundTint ="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/back_button" />
+
+    <Button
+        android:id="@+id/core_button"
+        android:layout_width="234dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="20dp"
+        android:onClick="navigateToCorePage"
+        android:text="Core"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:textColor="@color/charcoal"
+        android:backgroundTint ="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/arms_button" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

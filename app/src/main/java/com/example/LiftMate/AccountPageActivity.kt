@@ -9,27 +9,12 @@ import com.google.firebase.auth.FirebaseAuth
 
 class AccountPageActivity : AppCompatActivity() {
 
-    private lateinit var binding: ActivityAccountPageBinding
-    private lateinit var firebaseAuth: FirebaseAuth
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityAccountPageBinding.inflate(layoutInflater)
-        setContentView(binding.root)
 
-        firebaseAuth = FirebaseAuth.getInstance()
+        setContentView(R.layout.activity_account_page)
 
-        if (firebaseAuth.currentUser != null){
-            firebaseAuth.currentUser?.let {
-                binding.emailView.text = it.email
-            }
-        }
-        binding.BtnSignOut.setOnClickListener {
-            firebaseAuth.signOut()
-            startActivity(
-                Intent(this, MainActivity::class.java)
-            )
-        }
-        finish()
+
     }
 }

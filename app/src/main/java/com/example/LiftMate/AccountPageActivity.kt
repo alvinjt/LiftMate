@@ -7,7 +7,7 @@ import com.google.firebase.auth.FirebaseAuth
 
 
 class AccountPageActivity : AppCompatActivity() {
-
+//need this to commit
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

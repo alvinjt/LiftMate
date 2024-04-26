@@ -1,11 +1,18 @@
 package com.example.LiftMate
 
-import androidx.appcompat.app.AppCompatActivity
+import android.content.Intent
 import android.os.Bundle
+import android.view.View
+import androidx.appcompat.app.AppCompatActivity
 
 class ArmsWorkoutActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_arms_workout)
+    }
+
+    fun navigateToCalendarPage(view: View?) {
+        val intent = Intent(this, CalenderPageActivity::class.java)
+        startActivity(intent)
     }
 }

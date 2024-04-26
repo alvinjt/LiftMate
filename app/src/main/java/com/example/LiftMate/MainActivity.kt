@@ -31,10 +31,7 @@ class MainActivity : AppCompatActivity() {
             percentageText.text = "$percent%"
         }
 
-
         clickListener()
-
-
     }
 
     fun clickListener() {

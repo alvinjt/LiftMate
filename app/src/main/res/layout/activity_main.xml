@@ -6,27 +6,16 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+
     <View
         android:id="@+id/top_view"
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        android:background="@drawable/bg_view"
-        android:elevation="20dp"
         android:layout_gravity="bottom"
-        />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:text="LiftMate"
-        android:textColor="@color/charcoal"
-        android:textSize="60sp"
-        android:elevation="25dp"
-        android:textStyle="bold"
-        android:layout_marginTop="50sp" />
+        android:background="@drawable/bg_view"
+        android:elevation="20dp" />
 
-
-        <ProgressBar
+    <ProgressBar
             android:id="@+id/progressBar"
             style="@android:style/Widget.ProgressBar.Horizontal"
             android:layout_width="match_parent"
@@ -60,16 +49,16 @@
             android:textColor="@color/charcoal"
             android:layout_centerHorizontal="true"/>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/progressBar"
-            android:text="Workout Progress"
-            android:textStyle="bold"
-            android:layout_centerHorizontal="true"
-            android:textSize="18sp"
-            android:textColor="@color/charcoal"
-            />
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/progressBar"
+        android:layout_centerHorizontal="true"
+        android:text="Workout Progress"
+        android:textColor="@color/charcoal"
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
     <GridLayout
         android:layout_width="match_parent"
@@ -231,6 +220,16 @@
         android:layout_marginLeft="380dp"
         android:layout_below="@id/top_view"
         />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="285dp"
+        android:layout_height="244dp"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_marginLeft="60dp"
+        android:layout_marginBottom="200dp"
+        android:elevation="20dp"
+        app:srcCompat="@drawable/logo" />
 
 
 </RelativeLayout>

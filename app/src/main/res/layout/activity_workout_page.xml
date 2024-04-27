@@ -24,7 +24,7 @@
         android:elevation="25dp"
         android:gravity="center"
         android:text="Choose Your Workout"
-        android:textColor="@color/charcoal"
+        android:textColor="@color/green"
         android:textSize="70sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
